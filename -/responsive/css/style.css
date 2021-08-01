@@ -1,0 +1,769 @@
+/*start Global rules*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif
+}
+
+html::-webkit-scrollbar {
+    width: .9rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #4c84ff;
+}
+
+/*end Global rules*/
+
+.return {
+    padding: 5px 15px;
+    background-color: rgb(104, 104, 104);
+    color: #EEE;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+    cursor: progress;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      start navbar    */
+
+/*start navbar*/
+
+nav {
+    background-color: #333;
+    color: #FFF;
+}
+
+nav .Home span {
+    color: rgb(13, 196, 13);
+}
+
+nav .Home h3 {
+    margin: 0 50px 0 0;
+    padding: 25px;
+}
+
+nav .Home button {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    color: #FFF;
+    transition: all .6s ease;
+}
+
+nav .Home li {
+    display: inline-block;
+    padding: 25px;
+}
+
+nav .Home li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: all .6s ease;
+}
+
+/*################################################      start media navbar  */
+
+@media (max-width: 767px) {
+    nav .Home {
+        padding: 15px 0;
+        text-align: center;
+    }
+    nav .Home ul {
+        display: none;
+        width: 100%;
+    }
+    nav .Home h3 {
+        display: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    nav .Home ul li {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    nav .Home h3 {
+        margin: 0 20px 0 0;
+        padding: 15px;
+    }
+    nav .Home li {
+        padding: 15px
+    }
+}
+
+@media (min-width: 768px) {
+    nav .Home button {
+        display: none !important;
+    }
+    nav .Home h3, nav .Home ul {
+        display: inline-block !important;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      end navbar    */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   start header */
+
+/*start header*/
+
+.header {
+    background-image: url(../../../images/01.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .overlay h1 {
+    font-size: 60px;
+}
+
+.header .overlay .plan {
+    border: 2px solid #FFF;
+    font-size: 24px;
+    width: 48%;
+    padding: 8px;
+    margin: 0 1%;
+    border-radius: 3px;
+}
+
+.header .overlay .order {
+    border: 2px solid #FFF;
+    font-size: 24px;
+    padding: 8px;
+    margin: 30px 1% 0;
+    border-radius: 3px;
+}
+
+/*end header*/
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      start media header*/
+
+@media (max-width: 767px) {
+    /*Mobile Tablet Rules*/
+    .header .overlay h1 {
+        margin-top: 50px
+    }
+    .header .overlay .plan {
+        width: 60%;
+        float: none;
+        margin: 0 auto 25px;
+        font-size: 25px;
+        box-shadow: 1px 1px 8px rgb(255, 207, 207) inset, -1px -1px 8px rgb(255, 207, 207) inset;
+    }
+    .visible-xs {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*small screen Rules*/
+    .container {
+        width: 738px;
+    }
+    .visible-sm {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*medium screen Rules*/
+    .container {
+        width: 972px;
+    }
+    .visible-md {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*large screen Rules*/
+    .container {
+        width: 1150px;
+    }
+    .visible-lg {
+        display: block !important;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   end header */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      start features    */
+
+/*start features*/
+
+.features {
+    padding: 30px 0;
+}
+
+.features .h1 {
+    font-size: 2.2em
+}
+
+.features .feat {
+    padding: 0 10px 0 0;
+    color: #555;
+}
+
+.features .feat h2 {
+    margin: 10px 0 8px
+}
+
+.features .feat p {
+    line-height: 1.6;
+    margin: 0
+}
+
+/* end features */
+
+/*################################################      start media features */
+
+@media (max-width: 767px) {
+    .features .feat {
+        text-align: center;
+        padding: 5px;
+    }
+    .features .h1 {
+        margin: 15px 0;
+    }
+    .features .feat:nth-of-type(even) {
+        /*even / odd السطر دا حلو مزاكرتوش بتاع*/
+        background-color: #DDD;
+    }
+    .responsive-paragraph {
+        text-align: center;
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    /*small screen Rules*/
+    .features .feat {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    /*medium screen Rules*/
+    .features .feat {
+        width: 33.3333%;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     end media features */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   start about us  */
+
+/* start about us */
+
+.about-us {
+    background-color: #ececec;
+    padding: 30px 0;
+}
+
+.about-us .h1 {
+    margin: 5px 0 4px
+}
+
+.about-us .responsive-paragraf {
+    color: #848484
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     end about us */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      start our works  */
+
+/* start our works */
+
+.our-works .image {
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+}
+
+.our-works .image img {
+    width: 100%;
+    height: 330px;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all .8s ease-out;
+}
+
+/*########################################################      start media our works*/
+
+@media (min-width: 768px) {
+    /*small screen Rules*/
+    .our-works .image {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 922px) {
+    /*medium screen Rules*/
+    .our-works .image {
+        width: 33.3333% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*large screen Rules*/
+    .our-works .image {
+        width: 25% !important;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      end media our works */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      start pricing table */
+
+.pricing-table {
+    background-color: #555;
+    color: #FFF;
+    padding: 50px 0;
+}
+
+.pricing-table .h1 {
+    margin: 0 0 60px;
+    color: #FFF
+}
+
+.pricing-table .pricing-plan {
+    border: 3px solid rgb(255, 255, 255);
+    padding: 20px 0;
+    position: relative;
+    border-radius: 15px;
+    transition: all .8s ease-out;
+}
+
+.pricing-table .pricing-plan h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: rgb(255, 180, 180);
+}
+
+.pricing-table .pricing-plan .pricing {
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #bfbfbf;
+}
+
+.pricing-table .pricing-plan ul {
+    line-height: 2;
+    font-size: 18px;
+}
+
+/*########################################################      start media pricing table*/
+
+@media (max-width: 767px) {
+    .pricing-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .pricing-table .pricing-plan.premium {
+        top: 327px;
+    }
+    .pricing-table .pricing-plan.Ultimate {
+        bottom: 327px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pricing-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 922px) {
+    .pricing-table .pricing-plan:not(.Ultimate) {
+        margin-right: 1%;
+    }
+    .pricing-table .pricing-plan {
+        width: 32.66666%;
+        margin-bottom: 0;
+    }
+    .pricing-table .pricing-plan.plus {
+        left: 33.66666%;
+    }
+    .pricing-table .pricing-plan.premium {
+        right: 33.66666%;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      end pricing table */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     start they say */
+
+.they-say {
+    padding: 50px 0;
+}
+
+.they-say .h1 {
+    margin: 10px 0 40px;
+}
+
+.they-say .person-say {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+}
+
+.they-say .person-say h3 {
+    margin: 30px 0 0;
+    font-size: 20px;
+    color: #424242;
+}
+
+.they-say .person-say p {
+    width: calc(100% - 120px)
+}
+
+.they-say .person-say .f-bird {
+    width: 100px;
+    margin-right: 20px;
+    transition: all 1s ease-in-out;
+    transform-origin: 40% 80%;
+}
+
+.they-say img {
+    filter: none
+}
+
+/*###########################################    start media they say*/
+
+@media (max-width:767px) {
+    .they-say .person-say .f-bird {
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say h3 {
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say p {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .they-say .person-say:first-of-type {
+        width: 100%;
+    }
+    .they-say .person-say:not(:first-of-type) {
+        width: 49%;
+    }
+    .they-say .person-say:last-of-type {
+        margin-left: 2%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 921px) {
+    .they-say .person-say:not(:first-of-type) .f-bird {
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 922px) {
+    .they-say .person-say:first-of-type {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .they-say {
+        text-align: left !important;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     end they say */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   start informatin */
+
+/* start informatin */
+
+.information {
+    background-color: #ececec;
+    padding: 30px 0;
+    font-size: 18px;
+}
+
+.information .h1 {
+    margin: 5px 0 4px
+}
+
+.information .info-list li {
+    background-color: #DDD;
+    padding: 15px;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.information .info-list li.selected {
+    background-color: #FFF;
+    color: #6caab3;
+    border-radius: 0 15px 15px 0;
+    margin: 2px 0;
+}
+
+.information .info-content {
+    margin-bottom: 30px
+}
+
+.information .info-content div {
+    background-color: #FFF;
+    border-radius: 0 15px 15px;
+    padding: 20px;
+    line-height: 2;
+}
+
+.information .info-content div:not(:first-of-type) {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .information .info-list li {
+        display: block;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   end informatin */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   start footer */
+
+.footer {
+    background-color: #333;
+    color: #EEE;
+}
+
+.footer .copyright, .footer .design {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .footer .copyright, .footer .design {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer .copyright, .footer .design {
+        width: 50%;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   end footer */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      framework   */
+
+/*start my framework*/
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center
+}
+
+.h1 {
+    font-size: 50px;
+    color: #4d4d4d;
+    transition: all .4s linear;
+}
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+    display: none
+}
+
+.float-l {
+    float: left
+}
+
+.clear-fix {
+    clear: both
+}
+
+.responsive-image {
+    width: 100%;
+}
+
+.responsive-p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #535353
+}
+
+.classic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.img-circle {
+    border-radius: 50%
+}
+
+.img-thumbnail {
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+
+/*end my framework*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      Hover   */
+
+.h1:hover {
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+}
+
+.pricing-table .pricing-plan:hover {
+    border-radius: 20px;
+    padding: 16px 0;
+    border: 5px solid #79ad83;
+}
+
+img {
+    filter: brightness(.2)
+}
+
+img:hover {
+    filter: brightness(1)
+}
+
+.they-say .person-say .f-bird:hover {
+    transform: rotate(360deg)
+}
+
+nav .Home li a:hover {
+    color: #79ad83;
+    text-decoration: underline
+}
+
+nav .Home button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+/* #################################################################        loading page */
+
+/* start loading page */
+
+body {
+    overflow-y: hidden;
+}
+
+.overlay-loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #111;
+}
+
+.overlay-loading .loading {
+    width: 100px;
+    height: 50px;
+    margin: 50vh auto;
+    position: relative;
+}
+
+.overlay-loading .loading span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 15px;
+    -webkit-animation: waving 1.5s infinite ease-in-out;
+    animation: waving 1.5s infinite ease-in-out;
+}
+
+.overlay-loading .loading span:nth-of-type(2) {
+    left: 18px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.overlay-loading .loading span:nth-of-type(3) {
+    left: 36px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.overlay-loading .loading span:nth-of-type(4) {
+    left: 53px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.overlay-loading .loading span:last-of-type {
+    left: 70px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@keyframes waving {
+    0%, 50%, 100% {
+        height: 5px;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background-color: #9b59b6;
+    }
+    25% {
+        height: 50px;
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        background-color: #3498b6;
+    }
+}
+
+/* end loading page */

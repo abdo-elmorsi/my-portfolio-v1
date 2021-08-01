@@ -1,0 +1,788 @@
+body {
+    padding-top: 67px;
+}
+
+:root {
+    --COLOR--: #0895D1
+}
+
+h1, h2, .h1, h3, h4, .lead, span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html::-webkit-scrollbar {
+    width: .9rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--COLOR--);
+}
+
+/* ########################################################     option-box   */
+
+/* start section option-box */
+
+.option-box {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 9999;
+    transition: all .8s ease-out !important;
+}
+
+.option-box .color-option {
+    float: left;
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid var(--COLOR--);
+    border-radius: 0 0 6px;
+}
+
+.option-box .color-option h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option-box .color-option ul li {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 3px;
+    border-radius: 50%;
+    opacity: .5;
+    border: 3px solid transparent;
+}
+
+.option-box .color-option ul li.active {
+    opacity: 1;
+    border: 3px solid #FFF;
+}
+
+.option-box .color-option ul li:first-of-type {
+    background-color: #1a5ab9;
+}
+
+.option-box .color-option ul li:nth-of-type(2) {
+    background-color: #0dcaf0;
+}
+
+.option-box .color-option ul li:nth-of-type(3) {
+    background-color: #3ea776;
+}
+
+.option-box .color-option ul li:nth-of-type(4) {
+    background-color: #ffd968;
+}
+
+.option-box .color-option ul li:nth-of-type(5) {
+    background-color: #a02c40;
+}
+
+.option-box .cog-check {
+    width: 42px;
+    display: inline-block;
+    padding: 5px;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+/* end section option-box */
+
+/* ###############################################################  start navbar */
+
+/* start Navbar */
+
+.navbar-brand {
+    font-size: 2.10rem;
+    margin-right: 0;
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    border-radius: 3px
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    transition: all .4s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #FFF
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: #333;
+    color: #FFF;
+    border-top: 3px solid var(--COLOR--);
+    min-width: 200px;
+}
+
+.dropdown-item {
+    color: #FFF;
+    padding: 8px 1rem;
+    transition: padding .4s ease
+}
+
+.dropdown-item:hover {
+    color: #FFF;
+    padding-left: 25px;
+}
+
+/* end Navbar */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* START carousel-caption */
+
+.carousel-item {
+    max-height: calc(100vh - 67px);
+}
+
+.carousel-item img {
+    height: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    bottom: 120px;
+    background: rgba(3, 3, 3, .5);
+    border-radius: 5px;
+    padding: 60px 0;
+    width: 60%;
+    margin: auto;
+}
+
+.carousel-caption h2 {
+    color: var(--COLOR--);
+}
+
+.carousel-caption p {
+    padding-bottom: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    padding: 30px
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+/* End carousel-caption */
+
+/* ####################################################################################### */
+
+/* start section about */
+
+.about h1 {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about .lead {
+    color: #888;
+    font-size: 25px;
+    margin-top: 15px
+}
+
+/* end section about */
+
+/* Start section Features */
+
+.features {
+    background: #EEE;
+    padding: 50px 0
+}
+
+.features .feat {
+    margin-bottom: 40px
+}
+
+.features .feat h3 {
+    transition: all .5s ease
+}
+
+.features .feat h3:hover {
+    text-shadow: 1px 1px 1px #444
+}
+
+.features .feat span.fas {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* end section Features */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* start testimonalis section */
+
+.testimonials {
+    background-color: #f7f7f7
+}
+
+.testimonials p {
+    padding: 0 10%
+}
+
+.carousel-item {
+    transition: all .6s ease
+}
+
+.testimonials .lead {
+    line-height: 2em;
+    margin-bottom: 10px
+}
+
+.testimonials span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.testimonials .carousel-inner {
+    min-height: 160px
+}
+
+.testimonials .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 30px;
+}
+
+.testimonials .carousel-indicators li {
+    text-indent: 0;
+    opacity: .4;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px;
+    transition: all .5s ease;
+}
+
+.testimonials .carousel-indicators li.active {
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 3px solid var(--COLOR--);
+    opacity: 1;
+}
+
+.testimonials .carousel-indicators li img {
+    width: 100%;
+    height: 100%
+}
+
+/* end testimonalis section */
+
+/* #################################################################### */
+
+/* start price table */
+
+.price_table {
+    background: #EEE
+}
+
+.price_table .price_box {
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.price_table .price_box:hover p {
+    transform: scale(1.1) rotate(360deg);
+    border: 2px solid #dddddd;
+}
+
+.price_table .price_box h2 {
+    margin: 5px 0 15px
+}
+
+.price_table .price_box p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #F3F3F3;
+    line-height: 100px;
+    border: 2px solid #FFF;
+    transition-duration: .8s;
+}
+
+.price_table .price_box ul {
+    line-height: 250%;
+    font-size: 18px;
+}
+
+.price_table .price_box a {
+    margin-bottom: 15px
+}
+
+/* end price table */
+
+/* ####################################################################### */
+
+/* start section our team */
+
+.our_team {
+    background: url(../../../images/04.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.our_team .team {
+    background: rgba(2, 2, 2, 0.85);
+    color: #FFF;
+    min-height: 600px;
+    padding-bottom: 0;
+}
+
+.our_team .team .person {
+    margin-bottom: 40px
+}
+
+.our_team .team .person p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.our_team .team .person img {
+    width: 150px;
+    height: 150px;
+    transition: all .4s ease;
+}
+
+.our_team .team .person img:hover {
+    transform: scale(1.1)
+}
+
+/* end section our team */
+
+/* ######################################################################   subscribe  */
+
+/* start section subscribe */
+
+.subscribe {
+    background: #EEE;
+}
+
+.subscribe .h1 {
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.subscribe p {
+    margin-bottom: 30px
+}
+
+.subscribe .form-control {
+    border-radius: 0;
+    width: 25%;
+    display: inline-block;
+    margin-right: -5px;
+}
+
+.subscribe button {
+    border-radius: 0;
+    margin-top: -6px
+}
+
+/* end section subscribe */
+
+/* ####################################################################################### */
+
+/* start section stats */
+
+.statistics {
+    background: url(../../../images/01.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.statistics .data {
+    background-color: rgba(2, 2, 2, 0.8);
+    color: #B5B5B5;
+    min-height: 300px;
+}
+
+.statistics .stats {
+    transition: all .4s ease;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.statistics .stats:hover {
+    color: #FFF
+}
+
+.statistics p {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.statistic span {
+    font-size: 17px
+}
+
+/* end section stats */
+
+/* ########################################################################## */
+
+/* start section our skills */
+
+.our-skills .progress {
+    height: 35px;
+    margin-bottom: 31px;
+}
+
+.our-skills .progress-bar {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.our-skills .skills-info h3 {
+    font-weight: bold;
+    margin-top: -10px
+}
+
+@media (max-width: 768px) {
+    .our-skills .skills-info h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .our-skills .skills-info .btn-primary {
+        margin: 2px auto;
+        display: block;
+    }
+}
+
+/* end section our skills */
+
+/* ######################################################################### */
+
+/* start contact us */
+
+.contact-us {
+    background: url(../../../images/02.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.contact-us .fields {
+    background: rgba(9, 9, 9, 0.7);
+    min-height: 300px;
+    color: #DDD;
+}
+
+.contact-us p {
+    margin-bottom: 40px
+}
+
+.contact-us textarea {
+    height: 108px
+}
+
+.contact-us .fields .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-us input[type="text"], .contact-us textarea {
+    background: rgba(70, 67, 67, 0.3);
+    border: none;
+    color: #FFF;
+}
+
+.contact-us input[type="text"]::placeholder, .contact-us textarea::placeholder {
+    color: #FFF;
+}
+
+/* end contact us */
+
+/* ################################################################################ */
+
+/* start our client */
+
+.our-clients {
+    background: #EEE;
+}
+
+.our-clients img {
+    width: 150px;
+    height: 120px;
+    opacity: 0.4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.our-clients img:hover {
+    opacity: 1
+}
+
+/* end our client */
+
+/* ############################################################################     footer */
+
+/* start footer */
+
+.footer {
+    background: #111;
+    color: #AAA;
+    padding-top: 10px;
+}
+
+.footer a {
+    color: #AAA
+}
+
+.footer a:hover {
+    color: #FFF
+}
+
+.footer h3 {
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+
+@media (max-width: 767px) {
+    .footer .container {
+        max-width: 95% !important;
+    }
+}
+
+.footer .three-columns {
+    overflow: hidden
+}
+
+.footer .three-columns li {
+    width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+}
+
+.footer .social-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+}
+
+.footer .social-list li {
+    float: left;
+    margin-right: 6px;
+    opacity: 0.5;
+    transition: all .4s ease-in-out;
+    filter: sepia(.5);
+}
+
+.footer .social-list li:hover {
+    opacity: 1;
+    filter: sepia(0);
+}
+
+.footer .social-list li img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.footer .media {
+    margin-top: 20px;
+}
+
+.footer .media-body {
+    padding-left: 8px;
+}
+
+.footer .img-thumbnail {
+    width: 40%;
+    height: 150px;
+    background: rgba(0, 0, 0, .4);
+    border: 1px solid #444;
+    margin-bottom: 5px;
+}
+
+.footer .copyright {
+    background: #333;
+    color: #AAA;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* end footer */
+
+/* ################################################################     button scroll */
+
+/* start button scroll top */
+
+.fa-chevron-up {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid #99B;
+    color: #FFF;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    transition: all .8s ease;
+}
+
+.fa-chevron-up:hover {
+    width: 51px;
+    height: 46px;
+    border-radius: 48%;
+    border: 2px solid #FFF;
+}
+
+/* end button scroll top */
+
+/* ################################################################# */
+
+/* start media query */
+
+@media (max-width: 767px) {
+    .carousel1 {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .subscribe .form-control {
+        display: block;
+        margin: 20px auto;
+        width: 95%;
+    }
+    .footer .social-list li {
+        margin-right: 20px;
+    }
+}
+
+/* end media query */
+
+/* ################################################################     start simple code */
+
+/* start simple code */
+
+.about, .testimonials, .price_table, .our_team .team, .subscribe, .statistics .data, .our-skills, .contact-us .fields, .our-clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel-indicators li.active, .fa-chevron-up, .dropdown-item:hover, .option-box .cog-check, .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    background-color: var(--COLOR--)
+}
+
+.footer h3, .testimonials span, .about h1 span, hr, .navbar-brand span, .footer .copyright span {
+    color: var(--COLOR--)
+}
+
+.h1 {
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+/* end simple code */
+
+/* #################################################################        loading page */
+
+/* start loading page */
+
+body {
+    overflow-y: hidden;
+}
+
+.overlay-loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #111;
+}
+
+.overlay-loading .loading {
+    width: 100px;
+    height: 50px;
+    margin: 50vh auto;
+    position: relative;
+}
+
+.overlay-loading .loading span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 15px;
+    -webkit-animation: waving 1.5s infinite ease-in-out;
+    animation: waving 1.5s infinite ease-in-out;
+}
+
+.overlay-loading .loading span:nth-of-type(2) {
+    left: 18px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.overlay-loading .loading span:nth-of-type(3) {
+    left: 36px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.overlay-loading .loading span:nth-of-type(4) {
+    left: 53px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.overlay-loading .loading span:last-of-type {
+    left: 70px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@keyframes waving {
+    0%, 50%, 100% {
+        height: 5px;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background-color: #FFF;
+    }
+    25% {
+        height: 50px;
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        background-color: var(--COLOR--);
+    }
+}
+
+/* end loading page */

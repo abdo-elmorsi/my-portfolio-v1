@@ -1,0 +1,201 @@
+* {box-sizing: border-box}
+body {font-family: Arial, Tahoma, sans-serif;user-select: none}
+
+.control-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 169, 244, .9);
+    z-index: 2;
+}
+.control-buttons span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336;
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.info-container {
+    background-color: #f6f6f6;
+    border: 2px solid #2196f3;
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden
+}
+
+.info-container .name {float: left;width: 40%}
+.info-container .triesGood {
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+.info-container .tries {
+    float: right;
+    width: 30%;
+    text-align: right;
+    float: right;
+}
+@media (max-width: 620px) {
+    .info-container .name {width: 100%;text-align: center;margin-bottom: 20px;}
+    .info-container .triesGood {
+        width: 45%;
+        text-align: center;
+        font-size: smaller;
+    }
+    .info-container .tries {
+        width: 55%;
+        text-align: center;
+        font-size: smaller;
+    }
+}
+/* ################################################################################################ */
+.memory-game-blocks {
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.memory-game-blocks.no-clicking {pointer-events: none;}
+.memory-game-blocks .game-block {
+    height: 180px;
+    transition: transform;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 180px;
+    margin: 0 8px 16px;
+    transition: all .5s ease;
+}
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-match {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid #2196f3;
+}
+.memory-game-blocks .game-block .front {
+    background: url(imgs/finish.jpg) no-repeat center center/cover;
+}
+@media (min-width: 922px) and (max-width: 1350px) {
+    .memory-game-blocks {width:65%;}
+    .info-container {width: 65%;}
+
+    .memory-game-blocks .game-block {
+        height: 150px;
+        flex: 1 0 150px;
+    }
+}
+@media (max-width: 921px) {
+    .memory-game-blocks {width:90%}
+    .info-container {width: 90%}
+
+    .memory-game-blocks .game-block {
+        height: 130px;
+        flex: 1 0 130px;
+    }
+}
+@media (max-width: 567px) {
+    .memory-game-blocks .game-block {
+        height: 80px;
+        flex: 1 0 80px;
+    }
+}
+.memory-game-blocks .game-block .back {
+    background-color: #607D8B;
+    transform: rotateY(180deg);
+}
+.memory-game-blocks .game-block .back img {
+    width: 94%;
+    height: 94%;
+    margin-top: 3%;
+}
+/* ###########################################   */
+.showTries {
+    font-size: 30px;
+    background-color: #181818;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 25%;
+    height: 90px;
+    color: #fff;
+    overflow: hidden;
+}
+@media (max-width: 921px) {
+    .showTries {
+        padding: 0 10%;
+        font-size: 25px;
+        height: 80px;
+    }
+}
+@media (max-width: 567px) {
+    .showTries {
+        padding: 0 2%;
+        font-size: 20px;
+    }
+}
+.showTries h3 {
+    width: 70%;
+    float: left;
+    margin: 0;
+    padding-top: 22px;
+}
+.showTries span {
+    width: 30%;
+    float: right;
+    text-align: right;
+    padding-top: 28px;
+}
+/* ###########################################      media    */
+.red {
+    font-weight: bold;
+    color: white;
+    background: #ff2f2f;
+    border-radius: 50%;
+    padding: 8px;
+}
+.loser {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 1);
+    z-index: 3;
+    transition: all .7s ease-in-out;
+}
+.loser::after {
+    content: 'You Are Loser';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(223, 224, 167);
+}
+@media (max-width: 767px) {
+    .loser::after {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+    }
+}

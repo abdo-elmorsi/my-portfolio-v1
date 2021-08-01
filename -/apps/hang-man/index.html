@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styleM.css">
+    <link rel="icon" href="../../../images/main-img.jpg" type="image/png">
+
+</head>
+
+<body>
+    <!--  oncontextmenu="return false" -->
+    <div class="container">
+        <div class="game-info">
+            <div class="game-name">Hangman</div>
+            <div class="category">
+                Word From: <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"><span></span></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+        </div>
+        <hr>
+        <div class="letters-guess"></div>
+    </div>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="faild" src="audio/faild.mp3" preload="auto"></audio>
+    <audio id="finishGame" src="audio/finish.mp3" preload="auto"></audio>
+    <script src="mainM.js"></script>
+</body>
+
+</html>

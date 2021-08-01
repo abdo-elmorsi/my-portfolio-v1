@@ -1,0 +1,402 @@
+:root {
+    --colorOne--: #08526d;
+}
+
+:root {
+    --colorTow--: #ec1c23;
+}
+
+html::-webkit-scrollbar {
+    width: .9rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--colorOne--);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--colorTow--);
+}
+
+.upper-bar {
+    background-color: var(--colorOne--)
+}
+
+.upper-bar span {
+    color: #bfc6c9
+}
+
+/* start statistic */
+
+.statistic i, .statistic h2 {
+    color: var(--colorOne--);
+}
+
+/* end statistic */
+
+/* ######################################################################## */
+
+/* start navbar */
+
+.navbar-brand span {
+    font-size: 28px
+}
+
+.navbar-brand span:first-child {
+    color: var(--colorOne--)
+}
+
+.navbar-brand span:last-child {
+    color: var(--colorTow--)
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: var(--colorOne--);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--colorTow--)
+}
+
+/* end navbar */
+
+/* ################################################################ */
+
+/* start slider */
+
+.slider .carousel-inner h1 {
+    z-index: 3;
+    font-size: 60px;
+    max-width: 95%;
+    left: 5%;
+}
+
+@media (max-width:768px) {
+    .slider .carousel-inner h1 {
+        font-size: 60px;
+        left: 0%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.slider .carousel-inner h1 span {
+    background-color: var(--colorTow--)
+}
+
+.slider .carousel-inner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 2, 2, .6);
+    z-index: 2;
+}
+
+.slider .carousel-item {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slider .carousel-one {
+    background-image: url('../../../images/01.jpg');
+}
+
+.slider .carousel-tow {
+    background-image: url('../../../images/02.jpg');
+}
+
+.slider .carousel-three {
+    background-image: url('../../../images/04.jpg');
+}
+
+.slider .carousel-indicators li {
+    height: 17px;
+    width: 17px
+}
+
+/* end slider */
+
+/* ########################################################################### */
+
+/* start overview */
+
+.overview {
+    background: rgb(241, 248, 253);
+}
+
+@media (min-width:768px) {
+    .overview p {
+        width: 75%;
+        margin: auto;
+    }
+    .featured-work p {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+/* end overview */
+
+/* ########################################################################### */
+
+/* start featured-work */
+
+.featured-work li {
+    font-weight: 500;
+    border: 2px solid var(--colorOne--);
+    color: var(--colorOne--);
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: all .4s ease-in-out;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .featured-work li {
+        margin-left: 0;
+    }
+}
+
+.featured-work li.active, .featured-work li:hover {
+    border: 2px solid var(--colorTow--);
+    background: var(--colorTow--);
+    color: #FFF;
+}
+
+.featured-work li:hover {
+    cursor: pointer
+}
+
+.featured-work .row div.col-md {
+    height: 300px;
+    transition: all .8s ease-in-out;
+}
+
+.featured-work .row div img {
+    width: 100%;
+    height: 100%;
+}
+
+.opacityTow {
+    opacity: 0.05
+}
+
+.round {
+    border-radius: 6px
+}
+
+@media (max-width: 768px) {
+    .opacityTow {
+        display: none;
+    }
+}
+
+/* end featured-work */
+
+/* ############################################################# */
+
+/* start testimonials */
+
+.testimonials {
+    background-image: url(../../../images/04.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.testimonials .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+
+.testimonials .carousel {
+    z-index: 5
+}
+
+.testimonials .carousel img {
+    width: 120px;
+    height: 120px;
+}
+
+.testimonials .carousel-caption {
+    margin-top: 180px;
+    position: relative;
+    left: 0;
+}
+
+.testimonials .carousel-item .lead {
+    margin-bottom: 100px;
+    width: 70%
+}
+
+.testimonials .carousel-indicators li {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.testimonials .carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 3rem !important;
+    width: 3rem !important;
+}
+
+/* end testimonials */
+
+/* start pricing table */
+
+@media (min-width: 768px) and (max-width: 921px) {
+    .pricing-table .card:not(:last-child) {
+        width: 49%;
+    }
+    .pricing-table .card:first-child {
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 921px) {
+    .pricing-table .card:nth-child(2) {
+        position: relative;
+        top: -18px;
+    }
+    .pricing-table .card {
+        width: 32%;
+    }
+}
+
+/* end pricing table */
+
+/* ######################################################## */
+
+/* star footer */
+
+.footer span {
+    font-size: 30px
+}
+
+.footer h2 {
+    color: var(--colorOne--);
+}
+
+.footer .site-info span:first-of-type {
+    color: var(--colorOne--)
+}
+
+.footer .site-info span:last-of-type {
+    color: var(--colorTow--);
+}
+
+.footer .site-info a {
+    color: var(--colorOne--);
+}
+
+.footer .site-info i {
+    color: var(--colorOne--);
+}
+
+.footer .site-info a::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f138';
+    font-weight: 700;
+    margin-right: 4px;
+    color: var(--colorOne--);
+}
+
+.helpful-links ul li::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f054';
+    font-weight: 800;
+    margin-right: 4px;
+    color: var(--colorOne--);
+}
+
+/* end footer */
+
+/* #################################################################        loading page */
+
+/* #################################################################        loading page */
+
+/* start loading page */
+
+body {
+    overflow-y: hidden;
+}
+
+.overlay-loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #111;
+}
+
+.overlay-loading .loading {
+    width: 100px;
+    height: 50px;
+    margin: 50vh auto;
+    position: relative;
+}
+
+.overlay-loading .loading span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 15px;
+    -webkit-animation: waving 1.5s infinite ease-in-out;
+    animation: waving 1.5s infinite ease-in-out;
+}
+
+.overlay-loading .loading span:nth-of-type(2) {
+    left: 18px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.overlay-loading .loading span:nth-of-type(3) {
+    left: 36px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.overlay-loading .loading span:nth-of-type(4) {
+    left: 53px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.overlay-loading .loading span:last-of-type {
+    left: 70px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@keyframes waving {
+    0%, 50%, 100% {
+        height: 5px;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background-color: var(--colorOne--);
+    }
+    25% {
+        height: 50px;
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        background-color: var(--colorTow--);
+    }
+}
+
+/* end loading page */

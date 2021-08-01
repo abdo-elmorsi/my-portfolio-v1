@@ -1,0 +1,10 @@
+@mixin webk($name, $val) {
+    #{'-webkit-' + $name}: $val;
+    #{'-moz-' + $name}: $val;
+    #{'-o-' + $name}: $val;
+    #{$name}: $val;
+}
+
+%box-shadow {
+    @include webk(box-shadow, 0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+}

@@ -1,0 +1,754 @@
+@charset "UTF-8";
+/*     #####################      Variable          ######################     */
+/*   #####################    كده تستخدمه هنا بس html عشان ميتخزنش في ال     ######################   */
+.header .intro, .features, .subscribe, .our-works, .testim, .our-team, .our-team .the-team, .contact-us {
+  text-align: center;
+}
+
+.features, .our-works, .our-team, .our-team .the-team {
+  padding: 50px 0;
+}
+
+/*   #####################    كده تستخدمه هنا بس html عشان ميتخزنش في ال     ######################   */
+/*   #####################    import External file  by .scss or not       ############################  */
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*   ############################       import External file  ############################        */
+/*   ############################       function to reUse   ############################        */
+/*   ############################       function to reUse  ############################        */
+/*   ############################       if condition   ############################        */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: ltr;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #f7600f;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+h2 span {
+  color: #f7600f;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+i.fa-facebook {
+  color: #3b5998;
+}
+
+i.fa-twitter-square {
+  color: #1da1f2;
+}
+
+i.fa-google-plus {
+  color: #dd4b39;
+}
+
+i.fa-whatsapp-square {
+  color: #128c7e;
+}
+
+/* ###############################################################################################  start header  */
+.header {
+  background: url(../imags2/four/header.jpg) no-repeat fixed center;
+  background-size: cover;
+  color: #fff;
+}
+
+.header .navbar {
+  padding: 25px 0;
+  font-size: 18px;
+  color: #b9bcc3;
+  overflow: hidden;
+}
+
+.header .navbar span {
+  font-size: 20px;
+}
+
+.header .navbar span span {
+  color: #f7600f;
+}
+
+.header .navbar span:nth-child(2) {
+  float: right;
+  color: #fff;
+}
+
+.header .navbar span:nth-child(2) i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.header .intro h1 {
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0;
+}
+
+.header .intro h1 span {
+  color: #f7600f;
+}
+
+.header .intro p {
+  margin: 10px 0 40px;
+  color: #e2e2e2;
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.header .intro .buttons button {
+  border-radius: 8px;
+  width: 143px;
+  height: 39px;
+  font-size: 17px;
+  color: white;
+  margin-right: 18px;
+  border: 1px solid #909090;
+  background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .intro .buttons button:hover {
+  border: 1px solid #f7600f;
+  background-color: #f7600f;
+}
+
+.header .arrow {
+  position: relative;
+  left: 50%;
+  bottom: 90px;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  line-height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid #676767;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  cursor: pointer;
+}
+
+.header .arrow:hover {
+  background-color: #f7600f;
+  border: 3px solid #f7600f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ###############################################################################################  end header  */
+/* ###############################################################################################  start features  */
+.features .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.features .container div {
+  -ms-flex-preferred-size: 220px;
+      flex-basis: 220px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.features .container div .ico {
+  border: 1px solid #ccc;
+  color: #f7600f;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  line-height: 125px;
+  margin: auto;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.features .container div .ico:hover {
+  border: 1px solid #f7600f;
+  background-color: #f7600f;
+  color: #fff;
+}
+
+.features .container div h3 {
+  text-transform: uppercase;
+  color: #505050;
+  font-size: 19px;
+}
+
+.features .container div p {
+  line-height: 1.7;
+  color: #a5a5a5;
+}
+
+/* ###############################################################################################  end features  */
+/* ###############################################################################################  start subscribe  */
+.subscribe {
+  background: url(../imags2/four/subscribe.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 260px;
+}
+
+.subscribe input {
+  border: none;
+}
+
+.subscribe input:first-child {
+  margin-top: 113px;
+  width: 500px;
+  padding-left: 15px;
+  height: 35px;
+  border-radius: 8px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.subscribe input:last-child {
+  width: 160px;
+  height: 35px;
+  border-radius: 6px;
+  background: #f7600f;
+  color: #fff;
+  font-size: 17px;
+}
+
+/* ###############################################################################################  end subscribe  */
+/* ###############################################################################################  start Our works  */
+.our-works p {
+  line-height: 1.8;
+  color: #a5a5a5;
+}
+
+.our-works .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.our-works .images .item {
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  height: 250px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-works .images .item .img-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.our-works .images .item .img-details h3 {
+  color: #f7600f;
+  margin-top: 50px;
+}
+
+.our-works .images .item .img-details p {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.our-works .images .item .img-details button {
+  margin-top: 15px;
+  padding: 5px 37px;
+  border-radius: 7px;
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-works .images .item .img-details button:hover {
+  border: 1px solid #f7600f;
+  background: #f7600f;
+}
+
+.our-works .images .item:nth-child(3) {
+  margin-right: 0;
+}
+
+.our-works .images .item:nth-child(6) {
+  margin-right: 0;
+}
+
+.our-works .images .item:nth-child(9) {
+  margin-right: 0;
+}
+
+.our-works .images img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-works .show-more {
+  font-size: 17px;
+  border: navajowhite;
+  padding: 10px 31px;
+  border-radius: 7px;
+  margin-top: 24px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-works .show-more:hover {
+  background-color: #f7600f;
+  color: #fff;
+}
+
+/* ###############################################################################################  end our works  */
+/* ###############################################################################################  start testimonials  */
+.testim {
+  background: url(../imags2/four/testBack.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 400px;
+  color: #fff;
+}
+
+.testim .overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.testim .container {
+  position: relative;
+}
+
+.testim .container .client img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.testim .container .client p {
+  line-height: 2;
+  color: #ccc;
+}
+
+.testim .container .client span {
+  font-size: 20px;
+}
+
+.testim .container .fa-chevron-right,
+.testim .container .fa-chevron-left {
+  position: absolute;
+  top: 65%;
+  cursor: pointer;
+  color: #999;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.testim .container .fa-chevron-right:hover,
+.testim .container .fa-chevron-left:hover {
+  color: #f7600f;
+  font-size: 33px;
+}
+
+.testim .container .fa-chevron-right {
+  right: 0;
+}
+
+.testim .container .fa-chevron-left {
+  left: 0;
+}
+
+/* ###############################################################################################  end testimonials  */
+/* ###############################################################################################  start our team  */
+.our-team .the-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+.our-team .the-team .person {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 3px 3px 2px 2px #535353;
+          box-shadow: 3px 3px 2px 2px #535353;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  margin: 10px auto 30px;
+}
+
+.our-team .the-team .person:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 10px 7px #2c2c2c;
+          box-shadow: 2px 2px 10px 7px #2c2c2c;
+}
+
+.our-team .the-team .person img {
+  width: 100%;
+  height: 200px;
+  border-bottom: 3px solid #f7600f;
+}
+
+.our-team .the-team .person h3 {
+  font-weight: normal;
+  color: #727272;
+  margin: 20px 0;
+}
+
+.our-team .the-team .person p {
+  color: #b9bcc3;
+  margin: 10px;
+  font-size: 13px;
+}
+
+.our-team .the-team .person i {
+  margin: 0 5px;
+}
+
+/* ###############################################################################################  end our team  */
+/* ###############################################################################################  start contact us  */
+.contact-us {
+  background: url(../imags2/four/bStreet.jpg) no-repeat fixed center;
+  background-size: cover;
+  color: #fff;
+}
+
+.contact-us form {
+  width: 70%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.contact-us form input {
+  width: 45%;
+  float: left;
+  padding: 11px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #c9c9c959;
+  color: #fff;
+}
+
+.contact-us form input[type="email"] {
+  margin-right: 10%;
+}
+
+.contact-us form textarea {
+  color: #fff;
+  border: 2px solid #c9c9c959;
+  background: transparent;
+  width: 100%;
+  border-radius: 12px;
+  margin: 30px auto;
+  padding: 10px 0 0 10px;
+  line-height: 2;
+}
+
+.contact-us form button {
+  float: left;
+  padding: 5px 37px;
+  border-radius: 7px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.contact-us form button:hover {
+  border: 1px solid #f7600f;
+  background: #f7600f;
+}
+
+.contact-us form .media {
+  float: right;
+}
+
+.contact-us form .media i {
+  margin: 0 5px;
+}
+
+/* ###############################################################################################  end contact us  */
+/* ###############################################################################################  start footer  */
+.footer {
+  padding: 20px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.footer .left {
+  float: left;
+}
+
+.footer .right {
+  float: right;
+}
+
+/* ###############################################################################################  end footer  */
+/* ###############################################################################################  start media query  */
+@media (max-width: 625px) {
+  .container {
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .navbar {
+    margin-bottom: 75px;
+  }
+  .header .intro h1 {
+    font-weight: bold;
+    font-size: 45px;
+  }
+  .header .intro p {
+    font-size: 16px;
+  }
+  .subscribe input:first-child {
+    margin-top: 100px;
+    width: 80%;
+    margin-bottom: 18px;
+    height: 30px;
+    margin-right: 0;
+  }
+  .contact-us form {
+    width: 95%;
+  }
+  .contact-us form button {
+    margin: 0 auto 20px;
+    float: none;
+  }
+  .contact-us form .media {
+    width: 100%;
+    float: none;
+  }
+  .footer .left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer .right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* ########################################################################  end media query  */
+/* start loading page */
+html {
+  overflow-y: hidden;
+}
+
+.overlay-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay-loading .spinner {
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: spinny 2s linear infinite;
+          animation: spinny 2s linear infinite;
+  -webkit-box-shadow: 0 0 20px #f7600f;
+          box-shadow: 0 0 20px #f7600f;
+}
+
+.overlay-loading .spinner:before, .overlay-loading .spinner:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: inherit;
+  background-color: crimson;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 10px);
+}
+
+.overlay-loading .spinner:after {
+  -webkit-animation: to-center-a 2s linear alternate infinite;
+          animation: to-center-a 2s linear alternate infinite;
+  top: auto;
+  bottom: -10px;
+}
+
+@-webkit-keyframes to-center-a {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+@keyframes to-center-a {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+.overlay-loading .spinner:before {
+  -webkit-animation: to-center-b 2s linear alternate infinite;
+          animation: to-center-b 2s linear alternate infinite;
+}
+
+@-webkit-keyframes to-center-b {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes to-center-b {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes spinny {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinny {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* end loading page */
+/*# sourceMappingURL=style.css.map */
