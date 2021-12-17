@@ -2,658 +2,624 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="welcome in website abdo ahmed">
-  <meta name="author" content="Abdo Al3mrany">
-  <title>Bootstrap Project By Abdo Ahmed</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="welcome in website abdo ahmed">
+	<meta name="author" content="Abdo Al3mrany">
+	<title>Abdo Elmorsy</title>
   <link rel="stylesheet" href="../library/fontawesome-free-5.15.1-web/css/all.min.css">
   <link rel="stylesheet" href="../library/bootstrap.min.css">
   <link rel="stylesheet" href="../library/hover.css">
-  <link rel="stylesheet" href="css2/main.css">
-  <link rel="icon" href="../../images/main-img.jpg" type="image/png">
-
+	<link rel="stylesheet" href="./css2/main.css">
 </head>
 
 <body>
-  <!-- start section Tool Box -->
-  <div class="option-box">
-    <div class="color-option text-center d-none" id="color-option">
-      <h4>Color Option</h4>
-      <ul class="list-unstyled">
-        <li data-color="#1a5ab9"></li>
-        <li class="active" data-color="#0dcaf0"></li>
-        <li data-color="#3ea776"></li>
-        <li data-color="#ffd968"></li>
-        <li data-color="#a02c40"></li>
-      </ul>
-    </div>
-    <div class="cog-check">
-      <i class="fas fa-cog fa-2x" id="setting"></i>
-    </div>
-  </div>
-  <!-- end section Tool Box -->
-  <!-- ################################################### -->
-  <!-- start navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+	<div>
+		<div class="Welcome position-fixed rounded-2 text-center text-white fs-2">
+			Welcome
+		</div>
+	</div>
+	<!-- start section Tool Box -->
+	<div class="option-box">
+		<div class="color-option text-center" id="color-option">
+			<h4>Color Option</h4>
+			<ul class="list-unstyled">
+				<li data-color="#1a5ab9" class="active"></li>
+				<li data-color="#0dcaf0"></li>
+				<li data-color="#3ea776"></li>
+				<li data-color="#ffd968"></li>
+				<li data-color="#a02c40"></li>
+			</ul>
+			<div class="cog-check">
+				<i class="fas fa-cog fa-2x" id="setting"></i>
+			</div>
+		</div>
+	</div>
+	<!-- end section Tool Box -->
+	<!-- ################################################### -->
+	<!-- start navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
 
-      <a class="navbar-brand" href="#">Abdo<span> 3o</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+			<a class="navbar-brand" href="#">Abdo<span> Elmorsy</span></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="">Home</a>
+					</li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+					<li class="nav-item">
+						<a class="nav-link" href="/-/bootstrap/about.html">About</a>
+					</li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="FAQ.html">FAQ</a>
-          </li>
+					<li class="nav-item">
+						<a class="nav-link" href="/-/bootstrap/FAQ.html">FAQ</a>
+					</li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Programming</a></li>
-              <li><a class="dropdown-item" href="#">Web Design</a></li>
-              <li>
-                <hr class="divider">
-              </li>
-              <li>
-                <hr class="divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Web Hosting</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar -->
-  <!-- #################################################################################### -->
-  <!-- Start Carousel -->
-  <div id="carouselEx" class="carousel carousel1 slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators d-none d-lg-flex">
-      <li data-bs-target="#carouselEx" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselEx" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselEx" data-bs-slide-to="2"></li>
-      <li data-bs-target="#carouselEx" data-bs-slide-to="3"></li>
-    </ol>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Services
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Programming</a></li>
+							<li><a class="dropdown-item" href="#">Web Design</a></li>
+							<li>
+								<hr class="divider">
+							</li>
+							<li>
+								<hr class="divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Web Hosting</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
 
-    <div class="carousel-inner">
+	<!-- ######################################################## -->
+	<!-- Start Section About  -->
+	<section class="about text-center">
+		<div class="container">
+			<h1 class="hvr-float">Meet Our New Template<span> Abdo Ahmed</span></h1>
+			<p class="lead">Hello let Me Introduse Our New Template <strong>Abdo Ahmed</strong>. Created With All The Love
+				Bootstrap</p>
+		</div>
+	</section>
+	<!-- end Section About  -->
+	<!-- ##################################################### -->
+	<!-- Start Section Features  -->
+	<section class="features text-center">
+		<div class="container">
+			<h2 class="h1 hvr-shutter-in-horizontal">Our Features</h2>
+			<div class="row">
 
-      <div class="carousel-item active">
-        <img src="../../images/01.jpg" class="d-block w-100" alt="photo">
-        <div class="carousel-caption d-none d-lg-block">
-          <h2 class="h1 hvr-underline-from-left">Welcome</h2>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non explicabo vero possimus, modi
-            cumque voluptates eum asperiores, maxime, facere repudiandae officiis quas! Earum quam suscipit, culpa ut
-            ipsum qui voluptate!</p>
-          <i class="fas fa-spinner fa-pulse fa-2x"></i>
-        </div>
-      </div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feat">
+						<span class="fas fa-check"></span>
+						<h3>100% Responsive</h3>
+						<p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima qui omnis mollitia eos
+							saepe accusantium veritatis labore libero dolores laudantium n
+					</div>
+				</div>
 
-      <div class="carousel-item">
-        <img src="../../images/02.jpg" class="d-block w-100" alt="photo">
-        <div class="carousel-caption d-none d-lg-block">
-          <h2 class="h1 hvr-underline-from-left">Welcome</h2>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam maxime sapiente
-            repellendus quia repellat similique eveniet rem. Voluptates ut vitae a harum pariatur! Harum a debitis
-            laudantium natus at.</p>
-          <div class="btn btn-primary">Read More</div>
-          <div class="btn btn-danger">By Now</div>
-        </div>
-      </div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feat">
+						<span class="fas fa-thumbs-up"></span>
+						<h3>Retina Ready</h3>
+						<p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima qui omnis mollitia eos
+							saepe accusantium veritatis a illum, labore libero dolores laudantium n
+					</div>
+				</div>
 
-      <div class="carousel-item">
-        <img src="../../images/03.jpg" class="d-block w-100" alt="photo">
-        <div class="carousel-caption d-none d-lg-block">
-          <h2 class="h1 hvr-underline-from-left">Welcome</h2>
-          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta aut temporibus dolore esse
-            ipsa est aliquam voluptatibus in neque reiciendis, perspiciatis porro eveniet officia, deleniti tempore
-            sapiente! Et, similique ipsa?</p>
-        </div>
-      </div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feat">
+						<span class="fas fa-eye"></span>
+						<h3>Awesome Display</h3>
+						<p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima qui omnis mollitia eos
+							saepe accusantium dolores laudantium nre?</p>
+					</div>
+				</div>
 
-      <div class="carousel-item">
-        <img src="../../images/04.jpg" class="d-block w-100" alt="photo">
-        <div class="carousel-caption d-none d-lg-block">
-          <h2 class="h1">abdo Ahmed</h2>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
-            minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione commodi neque quidem, provident
-            reiciendis maiores.</p>
-        </div>
-      </div>
-    </div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feat">
+						<span class="fas fa-pencil-alt"></span>
+						<h3>Well Documented</h3>
+						<p class="lead">Lorem ipsum dolor, . Minima qui omnis mollitia eos
+							saepe accusantium veritatis rerum a illum, labore libero dolores laudantium nihil </p>
+					</div>
+				</div>
 
-    <a class="carousel-control-prev" href="#carouselEx" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
+			</div>
+		</div>
+	</section>
+	<!-- End Section Features  -->
+	<!-- ########################################################### -->
+	<!-- start what our client say -->
+	<div class="testimonials text-center">
+		<div class="container">
+			<h2 class="h1 hvr-bounce-to-top">what our clients say</h2>
 
-    <a class="carousel-control-next" href="#carouselEx" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
-  <!-- End carousel -->
-  <!-- ############################################!############################################# -->
-  <!-- Start Section About  -->
-  <section class="about text-center">
-    <div class="container">
-      <h1 class="hvr-float">Meet Our New Template<span> Abdo Ahmed</span></h1>
-      <p class="lead">Hello let Me Introduse Our New Template <strong>Abdo Ahmed</strong>. Created With All The Love
-        Bootstrap</p>
-    </div>
-  </section>
-  <!-- end Section About  -->
-  <!-- ##################################################################################### -->
-  <!-- Start Section Features  -->
-  <section class="features text-center">
-    <div class="container">
-      <h2 class="h1 hvr-shutter-in-horizontal">Our Features</h2>
-      <div class="row">
+			<div id="carouselExa" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="col-lg-3 col-md-6">
-          <div class="feat">
-            <span class="fas fa-check"></span>
-            <h3>100% Responsive</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis reprehenderit?
-              Excepturi et id dicta? Ipsam quisquam aliquam voluptate maxime voluptatibus placeat iste, distinctio
-              dolorum voluptates modi sint laudantium blanditiis!</p>
-          </div>
-        </div>
+				<div class="carousel-inner">
 
-        <div class="col-lg-3 col-md-6">
-          <div class="feat">
-            <span class="fas fa-thumbs-up"></span>
-            <h3>Retina Ready</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, esse rerum sint
-              doloremque beatae unde qui porro voluptate consectetur, possimus similique tempora voluptatum dolor
-              distinctio, aspernatur minima molestias veniam dolore.</p>
-          </div>
-        </div>
+					<div class="carousel-item active">
+						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
+							minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione commodi neque quidem, provident
+							reiciendis maiores. lo</p>
+						<span>Makana</span>
+					</div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="feat">
-            <span class="fas fa-eye"></span>
-            <h3>Awesome Display</h3>
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere explicabo non minus
-              similique, quia libero repellendus, sint sapiente adipisci asperiores ut. Aliquid rem facilis ipsam
-              deserunt repellendus, totam veniam tempore?</p>
-          </div>
-        </div>
+					<div class="carousel-item">
+						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
+							minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione .</p>
+						<span>Abdo Ahmed</span>
+					</div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="feat">
-            <span class="fas fa-pencil-alt"></span>
-            <h3>Well Documented</h3>
-            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima qui omnis mollitia eos
-              saepe accusantium veritatis rerum a illum, labore libero dolores laudantium nihil eaque at maiores tempora
-              molestiae sit.
-            </p>
-          </div>
-        </div>
+					<div class="carousel-item">
+						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
+							minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione commodi neque quidem, provident
+							reiciendis maiores.</p>
+						<span>Abdo Ahmed</span>
+					</div>
 
-      </div>
-    </div>
-  </section>
-  <!-- End Section Features  -->
-  <!-- ########################################################### -->
-  <!-- start what our client say -->
-  <div class="testimonials text-center">
-    <div class="container">
-      <h2 class="h1 hvr-bounce-to-top">what our clients say</h2>
+					<div class="carousel-item">
+						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
+							minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione.</p>
+						<span>Makana</span>
+					</div>
+				</div>
 
-      <div id="carouselExa" class="carousel slide" data-bs-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carouselExa" data-bs-slide-to="0" class="active">
+						<img src="./imags2/05.png" alt="photo">
+					</li>
+					<li data-bs-target="#carouselExa" data-bs-slide-to="1">
+						<img src="./imags2/06.png" alt="photo">
+					</li>
+					<li data-bs-target="#carouselExa" data-bs-slide-to="2">
+						<img src="./imags2/07.png" alt="photo">
+					</li>
+					<li data-bs-target="#carouselExa" data-bs-slide-to="3">
+						<img src="./imags2/08.png" alt="photo">
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- End what our client say  -->
+	<!-- ############################################################################################## -->
+	<!-- start section price table -->
+	<div class="price_table text-center">
+		<div class="container">
+			<h2 class="h1 hvr-bounce-to-bottom">Our Amazing Prices</h2>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="price_box">
+						<h2 class="text-primary">Hosting</h2>
+						<P class="d-block mx-auto">$40</P>
+						<ul class="list-unstyled">
+							<li>Space: 30GB</li>
+							<li>Emails: 20</li>
+							<li>Ips: 2 Ip</li>
+							<li>Databases: 10</li>
+							<li>Ftp Accounts: 5</li>
+						</ul>
+						<a href="#" class="btn btn-primary">Order Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="price_box">
+						<h2 class="text-success">Vps</h2>
+						<P class="d-block mx-auto">$50</P>
+						<ul class="list-unstyled">
+							<li>Space: 50GB</li>
+							<li>Emails: 40</li>
+							<li>Ips: 5 Ip</li>
+							<li>Databases: 20</li>
+							<li>Ftp Accounts: 10</li>
+						</ul>
+						<a href="#" class="btn btn-success">Order Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="price_box">
+						<h2 class="text-info">Dedicated</h2>
+						<P class="d-block mx-auto">$70</P>
+						<ul class="list-unstyled">
+							<li>Space: 80GB</li>
+							<li>Emails: 40</li>
+							<li>Ips: 8 Ip</li>
+							<li>Databases: 30</li>
+							<li>Ftp Accounts: 20</li>
+						</ul>
+						<a href="#" class="btn btn-info">Order Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="price_box">
+						<h2 class="text-danger">Cloud</h2>
+						<P class="d-block mx-auto">$90</P>
+						<ul class="list-unstyled">
+							<li>Space: 90GB</li>
+							<li>Emails: 50</li>
+							<li>Ips: 10 Ip</li>
+							<li>Databases: 50</li>
+							<li>Ftp Accounts: 50</li>
+						</ul>
+						<a href="#" class="btn btn-danger">Order Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end section price table -->
+	<!-- ########################################################### -->
+	<!-- start section Our Team -->
+	<section class="our_team text-center">
+		<div class="team">
+			<div class="container">
+				<h2 class="h1 hvr-grow-shadow">Meet Our Awesome Team</h2>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="person">
+							<img class="rounded-circle" src="./imags2/steve.png" alt="Steve">
+							<h3>Steve</h3>
+							<p>This is Steve Jobs, the owner of Apple bla bla bla This is Steve Jobs</p>
+							<i class="fab fa-google-plus-g fa-lg"></i>
+							<i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
+							<i class="fab fa-twitter fa-lg"></i>
+							<i class="fab fa-youtube fa-lg"></i>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="person">
+							<img class="rounded-circle" src="./imags2/marissa.png" alt="marissa">
+							<h3>marissa</h3>
+							<p>This is marissa, the owner of bla bla bla bla bla bla This is marissa</p>
+							<i class="fab fa-google-plus-g fa-lg"></i>
+							<i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
+							<i class="fab fa-twitter fa-lg"></i>
+							<i class="fab fa-youtube fa-lg"></i>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="person">
+							<img class="rounded-circle" src="./imags2/leah.png" alt="leah">
+							<h3>leah</h3>
+							<p>This is leah, the owner of bla bla bla bla bla bla This is leah</p>
+							<i class="fab fa-google-plus-g fa-lg"></i>
+							<i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
+							<i class="fab fa-twitter fa-lg"></i>
+							<i class="fab fa-youtube fa-lg"></i>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="person">
+							<img class="rounded-circle" src="./imags2/Mark.png" alt="Mark">
+							<h3>mark</h3>
+							<p>This is mark, the owner of bla bla bla bla bla bla This is mark</p>
+							<i class="fab fa-google-plus-g fa-lg"></i>
+							<i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
+							<i class="fab fa-twitter fa-lg"></i>
+							<i class="fab fa-youtube fa-lg"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section Our Team -->
+	<!-- ###############################################################  section subscribe   -->
+	<!-- start section subscribe -->
+	<section class="subscribe text-center">
+		<div class="container">
+			<h2 class="h1 hvr-wobble-bottom">Keep In Touch</h2>
+			<p class="lead">Sign Up For NewsLetter Dont Worry About Spam We Hate It Too</p>
+			<form class="form-inline">
+				<input class="form-control form-control-lg" type="text" placeholder="right yur email">
+				<button class="btn btn-danger btn-lg" id="sss"><i class="fas fa-edit"></i>Subscribe</button>
+			</form>
+		</div>
+	</section>
+	<!-- end section subscribe -->
+	<!-- ########################################################### -->
+	<!-- start section stats -->
+	<section class="statistics text-center">
+		<div class="data">
+			<div class="container">
+				<h2 class="h1 hvr-push">Our Main Statistics</h2>
 
-        <div class="carousel-inner">
+				<div class="row">
 
-          <div class="carousel-item active">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
-              minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione commodi neque quidem, provident
-              reiciendis maiores. lo</p>
-            <span>Makana</span>
-          </div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="stats  hvr-wobble-bottom">
+							<i class="fas fa-users fa-5x"></i>
+							<p>10,100</p>
+							<span>Satisfied Users</span>
+						</div>
+					</div>
 
-          <div class="carousel-item">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
-              minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione .</p>
-            <span>Abdo Ahmed</span>
-          </div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="stats  hvr-wobble-top">
+							<i class="fas fa-comments fa-5x"></i>
+							<p>9,350</p>
+							<span>Posted Comments</span>
+						</div>
+					</div>
 
-          <div class="carousel-item">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
-              minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione commodi neque quidem, provident
-              reiciendis maiores.</p>
-            <span>Abdo Ahmed</span>
-          </div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="stats hvr-wobble-to-top-right">
+							<i class="fas fa-suitcase fa-5x"></i>
+							<p>25,600</p>
+							<span>Projects Done</span>
+						</div>
+					</div>
 
-          <div class="carousel-item">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt aliquam odit corrupti
-              minus quos ducimus officia iusto culpa quisquam rerum, sint optio ratione.</p>
-            <span>Makana</span>
-          </div>
-        </div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="stats hvr-wobble-to-bottom-right">
+							<i class="fas fa-life-ring fa-5x"></i>
+							<p>87,100</p>
+							<span>Tickets Archieved</span>
+						</div>
+					</div>
 
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExa" data-bs-slide-to="0" class="active">
-            <img src="imags2/05.png" alt="photo">
-          </li>
-          <li data-bs-target="#carouselExa" data-bs-slide-to="1">
-            <img src="imags2/06.png" alt="photo">
-          </li>
-          <li data-bs-target="#carouselExa" data-bs-slide-to="2">
-            <img src="imags2/07.png" alt="photo">
-          </li>
-          <li data-bs-target="#carouselExa" data-bs-slide-to="3">
-            <img src="imags2/08.png" alt="photo">
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
-  <!-- End what our client say  -->
-  <!-- ############################################################################################## -->
-  <!-- start section price table -->
-  <div class="price_table text-center">
-    <div class="container">
-      <h2 class="h1 hvr-bounce-to-bottom">Our Amazing Prices</h2>
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <div class="price_box">
-            <h2 class="text-primary">Hosting</h2>
-            <P class="d-block mx-auto">$40</P>
-            <ul class="list-unstyled">
-              <li>Space: 30GB</li>
-              <li>Emails: 20</li>
-              <li>Ips: 2 Ip</li>
-              <li>Databases: 10</li>
-              <li>Ftp Accounts: 5</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="price_box">
-            <h2 class="text-success">Vps</h2>
-            <P class="d-block mx-auto">$50</P>
-            <ul class="list-unstyled">
-              <li>Space: 50GB</li>
-              <li>Emails: 40</li>
-              <li>Ips: 5 Ip</li>
-              <li>Databases: 20</li>
-              <li>Ftp Accounts: 10</li>
-            </ul>
-            <a href="#" class="btn btn-success">Order Now</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="price_box">
-            <h2 class="text-info">Dedicated</h2>
-            <P class="d-block mx-auto">$70</P>
-            <ul class="list-unstyled">
-              <li>Space: 80GB</li>
-              <li>Emails: 40</li>
-              <li>Ips: 8 Ip</li>
-              <li>Databases: 30</li>
-              <li>Ftp Accounts: 20</li>
-            </ul>
-            <a href="#" class="btn btn-info">Order Now</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="price_box">
-            <h2 class="text-danger">Cloud</h2>
-            <P class="d-block mx-auto">$90</P>
-            <ul class="list-unstyled">
-              <li>Space: 90GB</li>
-              <li>Emails: 50</li>
-              <li>Ips: 10 Ip</li>
-              <li>Databases: 50</li>
-              <li>Ftp Accounts: 50</li>
-            </ul>
-            <a href="#" class="btn btn-danger">Order Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end section price table -->
-  <!-- ########################################################### -->
-  <!-- start section Our Team -->
-  <section class="our_team text-center">
-    <div class="team">
-      <div class="container">
-        <h2 class="h1 hvr-grow-shadow">Meet Our Awesome Team</h2>
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="person">
-              <img class="rounded-circle" src="imags2/steve.png" alt="Steve">
-              <h3>Steve</h3>
-              <p>This is Steve Jobs, the owner of Apple bla bla bla This is Steve Jobs</p>
-              <i class="fab fa-google-plus-g fa-lg"></i>
-              <i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
-              <i class="fab fa-twitter fa-lg"></i>
-              <i class="fab fa-youtube fa-lg"></i>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="person">
-              <img class="rounded-circle" src="imags2/marissa.png" alt="marissa">
-              <h3>marissa</h3>
-              <p>This is marissa, the owner of bla bla bla bla bla bla This is marissa</p>
-              <i class="fab fa-google-plus-g fa-lg"></i>
-              <i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
-              <i class="fab fa-twitter fa-lg"></i>
-              <i class="fab fa-youtube fa-lg"></i>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="person">
-              <img class="rounded-circle" src="imags2/leah.png" alt="leah">
-              <h3>leah</h3>
-              <p>This is leah, the owner of bla bla bla bla bla bla This is leah</p>
-              <i class="fab fa-google-plus-g fa-lg"></i>
-              <i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
-              <i class="fab fa-twitter fa-lg"></i>
-              <i class="fab fa-youtube fa-lg"></i>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="person">
-              <img class="rounded-circle" src="imags2/Mark.png" alt="Mark">
-              <h3>mark</h3>
-              <p>This is mark, the owner of bla bla bla bla bla bla This is mark</p>
-              <i class="fab fa-google-plus-g fa-lg"></i>
-              <i class="fab fa-facebook-f fa-lg fa-pull-center"></i>
-              <i class="fab fa-twitter fa-lg"></i>
-              <i class="fab fa-youtube fa-lg"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section Our Team -->
-  <!-- ###############################################################  section subscribe   -->
-  <!-- start section subscribe -->
-  <section class="subscribe text-center">
-    <div class="container">
-      <h2 class="h1 hvr-wobble-bottom">Keep In Touch</h2>
-      <p class="lead">Sign Up For NewsLetter Dont Worry About Spam We Hate It Too</p>
-      <form class="form-inline">
-        <input class="form-control form-control-lg" type="text" placeholder="right yur email">
-        <button class="btn btn-danger btn-lg" id="sss"><i class="fas fa-edit"></i>Subscribe</button>
-      </form>
-    </div>
-  </section>
-  <!-- end section subscribe -->
-  <!-- ########################################################### -->
-  <!-- start section stats -->
-  <section class="statistics text-center">
-    <div class="data">
-      <div class="container">
-        <h2 class="h1 hvr-push">Our Main Statistics</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section stats -->
+	<!-- ########################################################### -->
+	<!-- start Our skills -->
+	<section class="our-skills">
+		<div class="container">
+			<h2 class="h1 text-center">Our Skills</h2>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="skills-progress">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="95"
+								aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+								Html5 / Css3
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width: 85%;">
+								Bootstrap
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="80"
+								aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+								Javascript / JQuery
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-dark" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width: 76%;">
+								React.js
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 offset-md-1">
+					<div class="skills-info">
+						<h3>About The Team</h3>
+						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis impedit voluptatibus
+							deserunt praesentium odio nihil nobis at nisi id assumenda non, dicta exercitationem aliquid </p>
+						<button type="button" class="btn btn-primary">Talk With A Prefessional</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end Our skills -->
+	<!-- ###################################################### -->
+	<!-- start section contact us -->
+	<div class="contact-us text-center">
+		<div class="fields">
+			<div class="container">
+				<i class="fas fa-headphones-alt fa-4x"></i><br>
+				<h2 class="h1 hvr-buzz">Tell Us What You Fell</h2>
+				<p class="lead">Fell Free To Contact Us Anytime</p>
 
-        <div class="row">
+				<!-- start contact form -->
+				<form role="form">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg" placeholder="Username">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg" placeholder="Cell Phone">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea class="form-control form-control-lg" placeholder="Your Message"></textarea>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg w-100">Contact Us</button>
+						</div>
+					</div>
+				</form>
+				<!-- end contact form -->
+			</div>
+		</div>
+	</div>
+	<!-- start section contact us -->
+	<!-- ############################################################## -->
+	<!-- start section our clients -->
+	<section class="our-clients text-center">
+		<div class="container">
+			<h2 class="h1 hvr-bounce-to-top">our client</h2>
+			<ul class="list-unstyled row">
+				<li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="./imags2/bbc1.png"
+						alt="bbc"></li>
+				<li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="./imags2/bbc1.png"
+						alt="bbc"></li>
+				<li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="./imags2/bbc1.png"
+						alt="bbc"></li>
+				<li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="./imags2/bbc1.png"
+						alt="bbc"></li>
+				<li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="./imags2/bbc1.png"
+						alt="bbc"></li>
+				<li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="./imags2/bbc1.png"
+						alt="bbc"></li>
+			</ul>
+		</div>
+	</section>
+	<!-- end section our clients -->
+	<!-- ############################################################## -->
+	<!-- start footer -->
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<h3>sitemap</h3>
+					<ul class="list-unstyled three-columns">
+						<li>Home</li>
+						<li>About</li>
+						<li>Company</li>
+						<li>Code</li>
+						<li>Design</li>
+						<li>Host</li>
+						<li>Solutions</li>
+						<li>sitemap</li>
+						<li>contact</li>
+					</ul>
+					<ul class="list-unstyled social-list">
+						<li><img src="./imags2/footer/facebook.png" alt="facebook"></li>
+						<li><img src="./imags2/footer/youtube.png" alt="youtube"></li>
+						<li><img src="./imags2/footer/twitter.png" alt="twitter"></li>
+						<li><img src="./imags2/footer/pintere.png" alt="pintere"></li>
+						<li><img src="./imags2/footer/finder.png" alt="finder"></li>
+						<li><img src="./imags2/footer/google+.png" alt="google"></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<h3>Latest Articles</h3>
+					<div class="media">
+						<a href="#">
+							<img class="float-start" src="./imags2/footer/pintere.png" alt="pointere">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">
+								Programming
+							</h4>
+							this is some text About Programming Design The Media Of Bootstrap 4.3.2
+						</div>
+					</div>
+					<div class="media">
+						<a href="#">
+							<img class="float-start" src="./imags2/footer/pintere.png" alt="pointere">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">
+								Coding
+							</h4>
+							this is some text About Programming Design The Media Of Bootstrap 4.3.2
+						</div>
+					</div>
+					<div class="media">
+						<a href="#">
+							<img class="float-start" src="./imags2/footer/pintere.png" alt="pointere">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">
+								Web Design
+							</h4>
+							this is some text About Programming Design The Media Of Bootstrap 4.3.2
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 ./imags2s">
+					<h3>Our Awesome Work</h3>
+					<img class="img-thumbnail" src="./imags2/footer/HTML5.png" alt="html5">
+					<img class="img-thumbnail" src="./imags2/footer/python.png" alt="html5">
+					<img class="img-thumbnail" src="./imags2/footer/images.png" alt="html5">
+					<img class="img-thumbnail" src="./imags2/footer/Pc.jpg" alt="html5">
+				</div>
+			</div>
+		</div>
+		<div class="copyright text-center">
+			Made With By<span> Abdo Elmorsy</span>
+		</div>
+	</section>
+	<div class="go-top-btn">
+		<i class="fas fa-angle-double-up"></i>
+		<i class="fas fa-angle-double-up"></i>
+	</div>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="stats  hvr-wobble-bottom">
-              <i class="fas fa-users fa-5x"></i>
-              <p>10,100</p>
-              <span>Satisfied Users</span>
-            </div>
-          </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script>
+		// scroll to top
+		let btn = document.querySelector(".go-top-btn");
+		window.onload = () => {
+			window.pageYOffset < 700 ? (btn.classList.remove("active")) : (btn.classList.add("active"));
+		}
+		window.onscroll = () => {
+			window.pageYOffset < 700 ? (btn.classList.remove("active")) : (btn.classList.add("active"));
+		}
+		btn.onclick = () => {
+			window.scrollTo(0, 0);
+		}
+		// alert welcome
+		window.onload = () => {
+			document.querySelector(".Welcome").style.right = "20px";
+			setTimeout(() => {
+				document.querySelector(".Welcome").style.right = "-400px";
+			}, 2000)
+		}
+		// add attr (draggable=>draggable) to all image
+		document.querySelectorAll("img").forEach(img => {
+			img.setAttribute("draggable", "false")
+		})
+		// open and close the setting
+		document.getElementById("setting").onclick = function () {
+			this.classList.toggle("fa-spin")
+			document.getElementById("color-option").classList.toggle("display");
+		};
+		// chose the best color and set it in localStorage
+		var colorLi = document.querySelectorAll(".color-option ul li");
+		var localColor = localStorage.getItem("color");
+		colorLi.forEach(ele => {
+			ele.addEventListener("click", (e) => {
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="stats  hvr-wobble-top">
-              <i class="fas fa-comments fa-5x"></i>
-              <p>9,350</p>
-              <span>Posted Comments</span>
-            </div>
-          </div>
+				document.documentElement.style.setProperty("--COLOR--", e.target.dataset.color);
+				localStorage.setItem("color", e.target.dataset.color);
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="stats hvr-wobble-to-top-right">
-              <i class="fas fa-suitcase fa-5x"></i>
-              <p>25,600</p>
-              <span>Projects Done</span>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="stats hvr-wobble-to-bottom-right">
-              <i class="fas fa-life-ring fa-5x"></i>
-              <p>87,100</p>
-              <span>Tickets Archieved</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section stats -->
-  <!-- ########################################################### -->
-  <!-- start Our skills -->
-  <section class="our-skills">
-    <div class="container">
-      <h2 class="h1 text-center">Our Skills</h2>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="skills-progress">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="95"
-                aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                Html5 / Css3
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                aria-valuemax="100" style="width: 85%;">
-                Bootstrap
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="80"
-                aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                Javascript
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                aria-valuemax="100" style="width: 76%;">
-                react
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 offset-md-1">
-          <div class="skills-info">
-            <h3>About The Team</h3>
-            <p class="lead">We Are Specialised Desiging And Programing Team Passionate About Web Design And Creative
-              Digital Ideas We Will Transfer Your Idea To A Digital And Wish</p>
-            <button type="button" class="btn btn-primary">Talk With A Prefessional</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end Our skills -->
-  <!-- ##################################################################################### -->
-  <!-- start section contact us -->
-  <div class="contact-us text-center">
-    <div class="fields">
-      <div class="container">
-        <i class="fas fa-headphones-alt fa-4x"></i><br>
-        <h2 class="h1 hvr-buzz">Tell Us What You Fell</h2>
-        <p class="lead">Fell Free To Contact Us Anytime</p>
-
-        <!-- start contact form -->
-        <form role="form">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control form-control-lg" placeholder="Username">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control form-control-lg" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control form-control-lg" placeholder="Cell Phone">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <textarea class="form-control form-control-lg" placeholder="Your Message"></textarea>
-              </div>
-              <button type="button" class="btn btn-primary btn-lg w-100">Contact Us</button>
-            </div>
-          </div>
-        </form>
-        <!-- end contact form -->
-      </div>
-    </div>
-  </div>
-  <!-- start section contact us -->
-  <!-- ##################################################################################### -->
-  <!-- start section our clients -->
-  <section class="our-clients text-center">
-    <div class="container">
-      <h2 class="h1 hvr-bounce-to-top">our client</h2>
-      <ul class="list-unstyled row">
-        <li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="imags2/bbc1.png"
-            alt="bbc"></li>
-        <li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="imags2/bbc1.png"
-            alt="bbc"></li>
-        <li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="imags2/bbc1.png"
-            alt="bbc"></li>
-        <li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="imags2/bbc1.png"
-            alt="bbc"></li>
-        <li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="imags2/bbc1.png"
-            alt="bbc"></li>
-        <li class="col-md-2 col-sm-6 hvr-float-shadow"><img class="img-fluid d-block mx-auto" src="imags2/bbc1.png"
-            alt="bbc"></li>
-      </ul>
-    </div>
-  </section>
-  <!-- end section our clients -->
-  <!-- ############################################################### -->
-  <!-- start footer -->
-  <section class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <h3>sitemap</h3>
-          <ul class="list-unstyled three-columns">
-            <li>Home</li>
-            <li>About</li>
-            <li>Company</li>
-            <li>Code</li>
-            <li>Design</li>
-            <li>Host</li>
-            <li>Solutions</li>
-            <li>sitemap</li>
-            <li>contact</li>
-          </ul>
-          <ul class="list-unstyled social-list">
-            <li><img src="imags2/footer/facebook.png" alt="facebook"></li>
-            <li><img src="imags2/footer/youtube.png" alt="youtube"></li>
-            <li><img src="imags2/footer/twitter.png" alt="twitter"></li>
-            <li><img src="imags2/footer/pintere.png" alt="pintere"></li>
-            <li><img src="imags2/footer/finder.png" alt="finder"></li>
-            <li><img src="imags2/footer/google+.png" alt="google"></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h3>Latest Articles</h3>
-          <div class="media">
-            <a href="#">
-              <img class="float-start" src="imags2/footer/pintere.png" alt="pointere">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">
-                Programming
-              </h4>
-              this is some text About Programming Design The Media Of Bootstrap 4.3.2
-            </div>
-          </div>
-          <div class="media">
-            <a href="#">
-              <img class="float-start" src="imags2/footer/pintere.png" alt="pointere">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">
-                Coding
-              </h4>
-              this is some text About Programming Design The Media Of Bootstrap 4.3.2
-            </div>
-          </div>
-          <div class="media">
-            <a href="#">
-              <img class="float-start" src="imags2/footer/pintere.png" alt="pointere">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">
-                Web Design
-              </h4>
-              this is some text About Programming Design The Media Of Bootstrap 4.3.2
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 imagess">
-          <h3>Our Awesome Work</h3>
-          <img class="img-thumbnail" src="imags2/footer/HTML5.png" alt="html5">
-          <img class="img-thumbnail" src="imags2/footer/python.png" alt="html5">
-          <img class="img-thumbnail" src="imags2/footer/images.png" alt="html5">
-          <img class="img-thumbnail" src="imags2/footer/Pc.jpg" alt="html5">
-        </div>
-      </div>
-    </div>
-    <div class="copyright text-center">
-      Copyright &copy; 2021 <span>Your Template Name</span> .Inc
-    </div>
-  </section>
-  <!-- end footer -->
-  <!-- #####################################################################################    loading page -->
-  <!-- start loading page -->
-  <div class="overlay-loading">
-    <div class="loading">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <!-- end loading page -->
-  <!-- start button scroll top -->
-  <div class="scroll-top" id="buttonScroll">
-    <i class="fas fa-chevron-up fa-2x text-center"></i>
-  </div>
-  <!-- end button scroll top -->
-  <script src="../library/jquery-3.5.1.min.js"></script>
-  <script src="../library/bootstrap.min.js"></script>
-  <script src="js2/main.js"></script>
+				e.target.parentElement.querySelector("li.active").classList.remove("active");
+				e.target.classList.add("active");
+			})
+			if (localColor !== null) {
+				document.documentElement.style.setProperty("--COLOR--", localColor);
+				if (ele.dataset.color === localColor) {
+					ele.classList.add("active");
+				} else {
+					ele.classList.remove("active");
+				}
+			}
+		})
+	</script>
 </body>
 
 </html>
